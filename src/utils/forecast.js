@@ -14,7 +14,15 @@ const forecast = (location, callback) => {
     } else {
       callback(
         undefined,
-        "It is Currently " + body.main.temp + " out. There is no chance of rain"
+        "It is Currently " +
+          body.main.temp +
+          " out. With max temp of: " +
+          body.main.temp_max +
+          ". Wind speed of " +
+          body.wind.speed +
+          " at " +
+          body.wind.deg +
+          " degrees"
       );
     }
   });
