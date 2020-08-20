@@ -26,5 +26,4 @@ weatherForm.addEventListener("submit", (e) => {
     .catch((e) => {
       console.log("hi", e);
     });
-  //   console.log(location);
 });
